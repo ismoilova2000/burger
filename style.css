@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 15px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px o;
+    align-items: center;
+}
+
+.menu{
+    gap: 30px;
+    display: flex;
+
+
+    a{
+        color: black;
+        text-decoration: none;
+    }
+
+
+    @media (max-width: 800px) {
+        position: fixed;
+        background-color: rgba(128, 128, 128, 0.463);
+        backdrop-filter: blur(10px);
+        top: 0%;
+        right: -120%;
+        width: 70%;
+        height: 100dvh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all 1s;
+        box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.35); 
+        
+    
+
+    }
+    
+}
+
+
+.logo{
+    color: black;
+    text-decoration: none;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.burger{
+    width: 40px;
+    display: none;
+
+    z-index: 5;
+
+    @media (max-width: 800px) {
+        display: block; 
+    }
+}
+
+
+
+.open{
+    display: flex;
+    right: 0;
+    
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100dvh;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 6;
+    display: none;
+}
+
+.open-modal{
+    padding: 10px 15px;
+}
+
+.box{
+    max-width: 500px;
+    width: 100%;
+    background-color: white;
+    padding: 50px;
+
+    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.95);
+    text-align: center;
+
+    button{
+        padding: 10px 15px;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+}
+
+.oppened{
+    display: flex;
+
+}
+
+.closed{
+    display: flex;
+}
+    
+
+
+
+
+
